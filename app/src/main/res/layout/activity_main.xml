@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.routecalculate.directionguide.view.DirectionGuideView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/directionGuideView_directionguide_show"/>
+    <TextView
+        android:id="@+id/tv_stepcount_showstep"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="step count" />
+
+    <Button
+        android:id="@+id/btn_stepcount_startservice"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/activity_stepcount_startservice" />
+    <com.example.routecalculate.route.view.RouteView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_stepcount_showstep"
+        android:id="@+id/routeview_stepcount_show"/>
+</RelativeLayout>

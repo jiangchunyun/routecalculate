@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">routecalculate</string>
+    <string name="activity_stepcount_startservice">start</string>
+</resources>
